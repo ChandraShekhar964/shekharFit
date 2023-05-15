@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shekhar Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Fasthand&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Alkatra', cursive;
+        font-family: 'Fasthand', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* background: url('img/gym.webp'); */
+        background: url('img/gym.avif');
+        background-size: 1500px 1000px;
+        background-repeat: no-repeat;
+        /* url is function to give a background img in website */
+
+    }
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        text-align: center;
+        color: rgb(243, 239, 13);
+        /* display block means short the area of the line  */
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100);
+        /* here filter invert is used to change the color; */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        color: maroon;
+        display: block;
+        width: 48%;
+        margin: 29px auto;
+        /* padding: 2px 2px; */
+        /* border: 2px solid rgb(99, 99, 0); */
+        
+
+    }
+    
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        color: rgb(11, 3, 60);
+        /* border: 2px solid rgb(87, 3, 3); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(250, 241, 241);
+    }
+
+    .btn {
+        font-family: 'Alkatra', cursive;
+        font-family: 'Fasthand', cursive;
+        margin: opx 9px;
+        color: rgb(207, 120, 7);
+        background-color: black;
+        padding: 4px 14px;
+        border: 3px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(47, 152, 231);
+    }
+    .container{
+        border: 5px solid rgb(95, 5, 5);
+        margin: 106px 80px;
+        padding: 20px;
+        width: 25%;
+        border-radius: 70px;
+        /* border-left: 5px yellow;
+        border-top: 5px yellow;
+        border-bottom: 5px yellow;
+        border-right: 5px yellow; */
+        /* background: url('img/gym.avif'); */
+        background: url('img/gym.webp');
+    }
+    .form-group input{
+        font-family: 'Alkatra', cursive;
+        font-family: 'Fasthand', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 10px;
+        border: 5px solid black;
+        margin: 100px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+        color: gold;
+    }
+    .container button{
+        display:inline-block;
+        width: 21%;
+        margin: 10px  5px;
+        /* text-align: auto; */
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/img.pgj.jpg" alt="">
+            <div>Shekhar Fitness</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <!-- <a href="http://instagram.com" class="btn">Read more</a> -->
+                <!-- <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About us</a></li>
+                <li><a href="#" class="active">Fitness Centre</a></li>
+                <li><a href="#" class="active">Contact us</a></li> -->
+                <li><a href="#" >Home</details></a></li>
+                <li><a href="about.htm" >About us</a></li>
+                <li><a href="fitness.html" >Fitness Centre</a></li>
+                <li><a href="contact.html" >Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button  -->
+        <div class="right">
+            <button class="btn"> Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+      <h1>join the best gym of CU now</h1>
+      <form action="noaction.php">
+        <!-- <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div> -->
+        <div>
+            Name    : 
+            <br>
+            <input type="name" name="myName" id="name">
+            
+           
+          </div>
+        <!-- <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div> -->
+        <div>
+            Age(yr) :  
+            <br>
+             <input type="integer" name="myBonus" >
+         </div>
+        <div>
+            <label for="car">Gender : </label><br>
+            <select name="mycar" id="car">
+                <option value="red">Male</option>
+                <option value="blue">FeMale</option>
+            </select>
+           </div>  
+        <!-- <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+             <div>
+                 Gender: Male <input type="radio" name="myGender" > FeMale <input type="radio" name="myGender" > Other <input type="radio" name="myGender" >
+             </div> 
+        </div> -->
+        <!-- <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div> -->
+        <div>
+           Locality: <br><input type="name" name="myName" id="name">
+             </div>
+             <div>
+                Number:<br> <input type="" name="myBonus" >
+             </div>
+             <div>
+                Are you eligible: <br><input type="checkbox" name="myEligibility" >
+             </div>
+             
+        <!-- <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone number">
+        </div> <div class="form-group"> -->
+           
+           Gmail :<br> <input type="text" name="" placeholder=" Enter your Email ID">
+           <br>
+           <button class="btn">submit</button><button class="btn">reset</button>
+           </div>
+           <!-- <div>
+            <input type="submit" value="Submit Now"> <input type="reset" value="Reset Now">
+        </div> -->
+        
+      
+        <!-- <div>
+            Are you eligible: <br><input type="checkbox" name="myEligibility" >
+         </div> -->
+         <!-- <div>
+       </form> <button class="btn">submit</button>
+    </div> -->
+    <!-- <div>
+        <input type="submit" value="Submit Now"> <input type="reset" value="Reset Now">
+    </div> -->
+    </form>
+</div>
+</body>
+
+</html>
